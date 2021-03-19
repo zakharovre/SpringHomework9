@@ -14,10 +14,10 @@ CREATE TABLE product_repo(`id` INT NOT NULL AUTO_INCREMENT,
                       `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                       `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                        PRIMARY KEY (`id`),
-                          INDEX `cat_idx` (`category_id` ASC) VISIBLE,
-                          CONSTRAINT `cat`
-                              FOREIGN KEY (`category_id`)
-                                  REFERENCES `spring_data`.`categories` (`id`));
+                       INDEX `cat_idx` (`category_id` ASC) VISIBLE,
+                       CONSTRAINT `cat`
+                       FOREIGN KEY (`category_id`)
+                       REFERENCES `spring_data`.`categories` (`id`));
 INSERT INTO product_repo (`id`, `name`, `cost`,`category_id`) VALUES
 (1, 'Beer', 50, 1),
 (2, 'Book', 1500, 4),

@@ -1,11 +1,13 @@
 package ru.geekbrains.homework9.model.dtos;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import ru.geekbrains.homework9.model.entities.Product;
 
 @Data
 @NoArgsConstructor
+@EqualsAndHashCode
 public class ProductDto {
     private int id;
     private String name;
