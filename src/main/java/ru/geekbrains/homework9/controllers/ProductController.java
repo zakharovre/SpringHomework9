@@ -1,11 +1,11 @@
-package ru.geekbrains.homework9.controller;
+package ru.geekbrains.homework9.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import ru.geekbrains.homework9.model.dtos.ProductDto;
-import ru.geekbrains.homework9.model.entities.Product;
-import ru.geekbrains.homework9.service.ProductService;
+import ru.geekbrains.homework9.models.dtos.ProductDto;
+import ru.geekbrains.homework9.models.entities.Product;
+import ru.geekbrains.homework9.services.ProductService;
 
 import java.util.List;
 

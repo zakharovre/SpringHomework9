@@ -1,16 +1,16 @@
-package ru.geekbrains.homework9.controller;
+package ru.geekbrains.homework9.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ru.geekbrains.homework9.model.dtos.Cart;
-import ru.geekbrains.homework9.service.CartService;
+import ru.geekbrains.homework9.models.dtos.Cart;
+import ru.geekbrains.homework9.services.CartService;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/cart")
+@RequestMapping("api/v1/cart")
 
 public class CartController {
 

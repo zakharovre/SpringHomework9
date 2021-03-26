@@ -1,9 +1,9 @@
-package ru.geekbrains.homework9.model.dtos;
+package ru.geekbrains.homework9.models.dtos;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import ru.geekbrains.homework9.model.entities.Product;
+import ru.geekbrains.homework9.models.entities.Product;
 
 @Data
 @NoArgsConstructor

@@ -1,9 +1,9 @@
-package ru.geekbrains.homework9.repository;
+package ru.geekbrains.homework9.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import ru.geekbrains.homework9.model.entities.Product;
+import ru.geekbrains.homework9.models.entities.Product;
 
 import java.util.List;
 

@@ -1,12 +1,12 @@
-package ru.geekbrains.homework9.service;
+package ru.geekbrains.homework9.services;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import ru.geekbrains.homework9.model.dtos.ProductDto;
-import ru.geekbrains.homework9.model.entities.Product;
-import ru.geekbrains.homework9.repository.CategoryRepository;
-import ru.geekbrains.homework9.repository.ProductRepository;
+import ru.geekbrains.homework9.models.dtos.ProductDto;
+import ru.geekbrains.homework9.models.entities.Product;
+import ru.geekbrains.homework9.repositories.CategoryRepository;
+import ru.geekbrains.homework9.repositories.ProductRepository;
 
 import java.util.List;
 

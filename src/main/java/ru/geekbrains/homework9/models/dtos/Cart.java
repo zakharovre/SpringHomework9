@@ -1,4 +1,4 @@
-package ru.geekbrains.homework9.model.dtos;
+package ru.geekbrains.homework9.models.dtos;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

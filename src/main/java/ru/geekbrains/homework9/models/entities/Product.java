@@ -1,4 +1,4 @@
-package ru.geekbrains.homework9.model.entities;
+package ru.geekbrains.homework9.models.entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

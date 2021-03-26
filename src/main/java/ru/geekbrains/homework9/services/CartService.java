@@ -1,11 +1,11 @@
-package ru.geekbrains.homework9.service;
+package ru.geekbrains.homework9.services;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.geekbrains.homework9.model.dtos.Cart;
-import ru.geekbrains.homework9.model.dtos.ProductDto;
-import ru.geekbrains.homework9.repository.ProductRepository;
+import ru.geekbrains.homework9.models.dtos.Cart;
+import ru.geekbrains.homework9.models.dtos.ProductDto;
+import ru.geekbrains.homework9.repositories.ProductRepository;
 
 @Service
 @Data
