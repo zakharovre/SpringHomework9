@@ -59,7 +59,6 @@ public class ProductController {
     public List<Product> between(@RequestParam int min, @RequestParam int max) {
         return productService.getProductsBetween(min, max);
     }
-
     @GetMapping("/regex")
     public List<Product> getProdByReg(@RequestParam String str) {
         return productService.getProductsByRegex(str);

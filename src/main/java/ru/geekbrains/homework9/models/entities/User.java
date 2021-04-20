@@ -27,4 +27,11 @@ public class User {
     @JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private List<Role> roles;
 
+    @OneToMany(mappedBy = "user")
+    private List<Order> orders;
+
+    @OneToOne
+    @JoinColumn(name = "discount_id")
+    private Discount discount;
+
 }
