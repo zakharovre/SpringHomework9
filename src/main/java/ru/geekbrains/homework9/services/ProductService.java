@@ -4,10 +4,12 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import ru.geekbrains.homework9.models.dtos.ProductDto;
+import ru.geekbrains.homework9.models.entities.Category;
 import ru.geekbrains.homework9.models.entities.Product;
 import ru.geekbrains.homework9.repositories.CategoryRepository;
 import ru.geekbrains.homework9.repositories.ProductRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -26,10 +28,13 @@ public class ProductService {
     }
 
     public ProductDto saveOrUpdate(ProductDto productDto) {
+        List<Category> categories = new ArrayList<>();
+        for (String name: productDto.getCategories())
+            categories.add(categoryRepository.findCategoryByName(name));
         if (productDto.getId() > 0)
-            return new ProductDto(productRepository.save(new Product(productDto.getId(), productDto.getName(), productDto.getCost(),categoryRepository.findCategoryByName(productDto.getCategory()))));
+            return new ProductDto(productRepository.save(new Product(productDto.getId(), productDto.getName(), productDto.getCost(),categories)));
         else
-            return new ProductDto(productRepository.save(new Product(productDto.getName(), productDto.getCost(),categoryRepository.findCategoryByName(productDto.getCategory()))));
+            return new ProductDto(productRepository.save(new Product(productDto.getName(), productDto.getCost(),categories)));
     }
 
     public void deleteProduct(int id) {
